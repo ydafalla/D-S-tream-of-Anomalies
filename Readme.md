@@ -25,11 +25,17 @@ The data is aboutambient_temperature_system_failure.csv: The ambient temperature
 
 * The multivariate approahes i used were: Isolation Forest and the One Class SVM.
 
+* I also implemented local outlier factor.
+
 ### 1. Univariate Isolation Forest
+Univariate outliers can be found when looking at a distribution of values in a single feature space. Isolation Forest was considered for doing univariate anomaly detection with the temperature used as the single feature.
 When using Isolation forest with just the temperatue values this is what we get:
 
 ![Univariate Isolation Forest](Pictures/univar.PNG)
 
+#### According to the above figure temperatures above 100 are outliers and temperatures below 60 are also outliers.
+
+Multivariate outliers can be found in a n-dimensional space (of n-features).  The multivariate approahes i used were: Isolation Forest and the One Class SVM.
 
 ### 2. Isolation Forest
 The main idea is that Isolation Forest explicitly identifies anomalies instead of profiling normal data points. Isolation Forest is built on the basis of decision trees. In these trees, partitions are created by first randomly selecting a feature and then selecting a random split value between the minimum and maximum value of the selected feature.
@@ -67,9 +73,9 @@ Using One Class SVM we were able to detect 1078 anomalies out of 22695 records w
 The Local Outlier Factor algorithm was used to try to detect anomaly points.
 
 #### Summareis of results: 
-##### Isolation Forest: 1134 anomalies detected out of 22695 records
+##### Isolation Forest: 1135 anomalies detected out of 22695 records
 ##### One ClassSVM: 1080 anomalies detected out of 22695 records
 
-* We observe that both algorithms were able to detect almost equal number of anomalies.
+* We observe that both algorithms were able to detect roughly equal number of anomalies.
 
 
