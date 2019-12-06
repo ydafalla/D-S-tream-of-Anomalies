@@ -5,7 +5,7 @@ Anomaly Detection Project
 
 
 ## Introduction:
-The project is about trying to detect anomalies using other features as columns. 
+The project is about trying to detect anomalies in a dataset using other features as columns. 
 
 The data was obatined from the following link:
 
