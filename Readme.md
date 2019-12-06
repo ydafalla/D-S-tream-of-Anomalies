@@ -57,7 +57,7 @@ Using the Isolation Foreset we were able to detect 1133 anomalies out of 22695 r
 Using One Class SVM we were able to detect 1078 anomalies out of 22695 records which is about 4.7%.
 
 #### Summareis of results: 
-##### Isolation Forest: 1135anomalies detected out of 22695 records
+##### Isolation Forest: 1134 anomalies detected out of 22695 records
 ##### One ClassSVM: 1080 anomalies detected out of 22695 records
 
 * We observe that both algorithms were able to detect almost equal number of anomalies.
