@@ -43,6 +43,14 @@ One Class SVM is best suited for novelty detection when the training set is not 
 
 ![One Class SVM](Pictures/one-class.PNG)
 
+### 4. Local Outlier Factor
+It is an unsupervised outlier detection technique which computes the local density deviation of a given data point with respect to its neighbors. It considers as outliers the samples that have a substantially lower density than their neighbors. LOF is used for outlier detection it has no predict, decision_function and score_samples methods.
+
+#### Local Outlier Factor (LOF) is a score that tells how likely a certain data point is an outlier/anomaly.
+* LOF ≈ 1 ⇒ no outlier
+* LOF ≫1 ⇒ outlier
+
+
 ## Discussion and Conclusion:
 Some univariate anomaly detection techniques were explored.
 
@@ -55,6 +63,8 @@ Two multivariate anomaly detection algorithms were implemented: The first approa
 Using the Isolation Foreset we were able to detect 1133 anomalies out of 22695 records which is about 5%.
 
 Using One Class SVM we were able to detect 1078 anomalies out of 22695 records which is about 4.7%.
+
+The Local Outlier Factor algorithm was used to try to detect anomaly points.
 
 #### Summareis of results: 
 ##### Isolation Forest: 1134 anomalies detected out of 22695 records
