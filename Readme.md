@@ -34,7 +34,7 @@ In principle, outliers are less frequent than regular observations and are diffe
 A One-Class Support Vector Machine is an unsupervised learning algorithm that is trained only on the ‘normal’ data. It learns the boundaries of these points and is therefore able to classify any point that lie outside the boundary as outliers.
 One Class SVM is best suited for novelty detection when the training set is not contaminated by outliers. That said, outlier detection in high-dimension, or without any assumptions on the distribution of the inlying data is very challenging, and a One-class SVM might give useful results in these situations depending on the value of its parameters.
 
-
+![One Class SVM](Pictures/one-class.PNG)
 
 ## Discussion and Conclusion:
 Two anomaly detection algorithms were implemented: The first approach is the Isolation Forest and the other approach is the One Class SVM.
